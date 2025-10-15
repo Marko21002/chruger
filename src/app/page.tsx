@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import About from "./components/about";
 import Feature from "./components/feature";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Hero />
       <Feature />
+      <About />
     </div>
   );
 }
