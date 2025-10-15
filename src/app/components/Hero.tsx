@@ -19,7 +19,7 @@ export default function Hero() {
           height={400}
           className="z-10 absolute bottom-[-10%] left-1/2 -translate-x-1/2"
         />
-        <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
+        <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 pt-24 pb-72">
           <div className="flex flex-col gap-4 z-10">
             <div className="text-white text-4xl w-full max-w-xl text-center font-garamond font-bold uppercase">
               Köstliches <br /> Essen & ein wundervolles Genusserlebnis
