@@ -17,7 +17,7 @@ export default function Hero() {
           alt="tacos"
           width={500}
           height={500}
-          className="z-10 absolute bottom-[-40px] left-1/2 -translate-x-1/2"
+          className="z-10 absolute bottom-[-10%] left-1/2 -translate-x-1/2"
         />
         <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
           <div className="flex flex-col gap-4 z-10">
