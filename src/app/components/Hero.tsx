@@ -15,8 +15,8 @@ export default function Hero() {
         <Image
           src="/Tacos.png"
           alt="tacos"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="z-10 absolute bottom-[-10%] left-1/2 -translate-x-1/2"
         />
         <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
