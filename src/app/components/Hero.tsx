@@ -1,45 +1,34 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
-    <div className="bg-[#04242C] w-screen h-[calc(100vh-72px)] flex flex-col relative">
-      <div className=" flex flex-col items-center justify-center">
-        <div className="w-full h-32 bg-white z-10"></div>
-        <div className="w-full h-full">
-          <Image
-            src="/hero.png"
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="w-full absolute top-0 left-0 h-full object-cover opacity-25"
-          />
-          <img
-            src="/Tacos.png"
-            alt="hero"
-            className="w-auto h-[300px] z-10 absolute bottom-[-80px] left-1/2 -translate-x-1/2 object-cover"
-          />
-        </div>
-        <div className="mx-12 z-10 h-full px-4 flex flex-col items-center justify-center gap-4 md:max-w-3xl">
-          <div className="text-white uppercase text-center  text-4xl md:text-6xl font-bold">
-            Köstliches Essen & ein wundervolles Genusserlebnis
+    <div>
+      <div className="w-full h-screen bg-[#04242C] relative">
+        <img
+          src="/hero.png"
+          alt="hero"
+          width={1440}
+          height={1080}
+          className="w-full h-full z-0  absolute top-0 left-0 opacity-30"
+        />
+        <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
+          <div className="flex flex-col gap-4 z-10">
+            <div className="text-white text-4xl  text-center font-bold uppercase">
+              Köstliches Essen & ein wundervolles Genusserlebnis
+            </div>
+            <div className="text-white text-sm text-center">
+              Inspiriert von Reisen und der Liebe zu verschiedenen Kulturen
+              bietet das Chruger No:10 hausgemachte Köstlichkeiten aus frischen
+              Zutaten – komm vorbei und genieße sie!
+            </div>
           </div>
-          <div className="text-white text-center text-sm md:text-base opacity-80">
-            Inspiriert von Reisen und der Liebe zu verschiedenen Kulturen bietet
-            das Chruger No:10 hausgemachte Köstlichkeiten aus frischen Zutaten –
-            komm vorbei und genieße sie!
-          </div>
-          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-4 mt-4">
-            <button className="border bg-[#F5C84F] text-black  border-white w-[80%] md:w-auto md:px-8 py-4">
+          <div className="flex z-10 flex-col items-center justify-center gap-4">
+            <button className="bg-[#F5C84F] text-black px-8 py-4 uppercase font-semibold">
               Jetzt bestellen
-            </button>{" "}
-            <button className="border text-white border-white w-[80%] md:w-auto md:px-8 py-4">
-              Unsere Spezialitäten
+            </button>
+            <button className="border-2 border-white text-white px-8 py-4 uppercase font-semibold">
+              Jetzt bestellen
             </button>
           </div>
         </div>
-      </div>
-      <div className=" ">
-        <div className="w-full h-full bg-white"></div>
       </div>
     </div>
   );
