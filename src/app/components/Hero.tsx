@@ -9,6 +9,11 @@ export default function Hero() {
           height={1080}
           className="w-full h-full z-0  absolute top-0 left-0 opacity-30"
         />
+        <img
+          src="/Tacos.png"
+          alt="tacos"
+          className=" z-10 absolute bottom-0  translate-x-1/6 "
+        />
         <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
           <div className="flex flex-col gap-4 z-10">
             <div className="text-white text-4xl  text-center font-bold uppercase">
