@@ -1,18 +1,23 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <div>
       <div className="w-full h-screen bg-[#04242C] relative">
-        <img
+        <Image
           src="/hero.png"
           alt="hero"
-          width={1440}
-          height={1080}
-          className="w-full h-full z-0  absolute top-0 left-0 opacity-30"
+          layout="fill"
+          objectFit="cover"
+          className="z-0 opacity-30"
+          priority
         />
-        <img
+        <Image
           src="/Tacos.png"
           alt="tacos"
-          className=" z-10 absolute bottom-0  translate-x-1/6 "
+          width={500}
+          height={500}
+          className="z-10 absolute bottom-[-40px] left-1/2 -translate-x-1/2"
         />
         <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
           <div className="flex flex-col gap-4 z-10">
