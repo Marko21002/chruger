@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Cormorant_Garamond,
+  Crimson_Text,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +20,11 @@ const cormorantGaramond = Cormorant_Garamond({
   variable: "--font-cormorant-garamond",
   subsets: ["latin"],
 });
+const crimsonText = Crimson_Text({
+  variable: "--font-crimson-text",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cormorantGaramond.className} antialiased`}
+        className={`${geistSans.className} ${geistMono.className} ${cormorantGaramond.className} ${crimsonText.className} antialiased`}
       >
         {children}
       </body>
