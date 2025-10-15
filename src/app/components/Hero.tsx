@@ -21,7 +21,7 @@ export default function Hero() {
         />
         <div className="z-10 flex flex-col items-center gap-8 justify-center px-12 py-[25%]">
           <div className="flex flex-col gap-4 z-10">
-            <div className="text-white text-4xl font-cormorant-garamond  text-center font-bold uppercase">
+            <div className="text-white text-4xl  text-center font-bold uppercase">
               Köstliches Essen & ein wundervolles Genusserlebnis
             </div>
             <div className="text-white text-sm text-center">
