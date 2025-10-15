@@ -13,7 +13,7 @@ export default function Hero() {
           priority
         />
         <Image
-          src="/Tacos.png"
+          src="/Taco.png"
           alt="tacos"
           width={400}
           height={400}
