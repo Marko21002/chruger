@@ -23,7 +23,7 @@ export default function Frame() {
       />
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center gap-8 justify-center h-full text-center p-4">
+      <div className="relative z-20 flex flex-col items-center gap-8 pt-[20vh] h-full text-center p-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full max-w-md font-garamond font-bold uppercase">
             KÖSTLICHES ESSEN & EIN WUNDERVOLLES GENUSSERLEBNIS
