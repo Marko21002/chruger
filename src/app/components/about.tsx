@@ -37,7 +37,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <button className="bg-[#F5C84F] px-5 py-3 font-crimson text-base font-semibold uppercase text-black">
+        <button className="bg-[#EFC9A5] px-5 py-3 font-crimson text-base font-semibold uppercase text-black">
           KONTAKT
         </button>
       </div>
