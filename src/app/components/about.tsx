@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="w-full h-fit bg-[#04242C] relative px-12 pb-12 pt-12">
+    <div className="w-full h-fit bg-[#04242C] relative px-4 pb-12 pt-12">
       <Image
         src="/about.png"
         alt="about"
         width={1000}
         height={1000}
-        className="w-full h-full z-0 object-cover opacity-35 absolute top-0 left-0"
+        className="w-full h-full z-0 object-cover opacity-65 absolute top-0 left-0"
       />
       <div className="flex flex-col items-center justify-center gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
