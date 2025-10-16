@@ -3,13 +3,22 @@ import Image from "next/image";
 export default function Frame() {
   return (
     <div className="relative w-full h-screen bg-[#04242C]">
-      {/* Background Image */}
+      {/* Mobile/Tablet Background Image */}
       <Image
         src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PE6KJY4DJMPT6YMDXVVAC9.png"
         alt="background"
-        layout="fill"
-        objectFit="cover"
-        className="z-0 opacity-30"
+        fill
+        style={{ objectFit: "cover" }}
+        className="z-0 opacity-30 lg:hidden"
+        priority
+      />
+      {/* Desktop Background Image */}
+      <Image
+        src="/hero2.png"
+        alt="background"
+        fill
+        style={{ objectFit: "cover" }}
+        className="z-0 opacity-30 hidden lg:block"
         priority
       />
 
