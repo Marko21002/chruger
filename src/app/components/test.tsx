@@ -26,7 +26,7 @@ export default function Frame() {
       <div className="relative z-20 flex flex-col items-center gap-8 pt-[20vh] h-full text-center p-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full max-w-md font-garamond font-bold uppercase">
-            KÖSTLICHES ESSEN & EIN WUNDERVOLLES GENUSSERLEBNIS
+            KÖSTLICHES <br /> ESSEN & EIN WUNDERVOLLES GENUSSERLEBNIS
           </h1>
           <p className="text-white text-xs max-w-sm mx-auto font-crimson">
             Inspiriert von Reisen und der Liebe zu verschiedenen Kulturen bietet
