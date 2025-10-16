@@ -9,7 +9,7 @@ export default function Hero() {
           alt="hero"
           layout="fill"
           objectFit="cover"
-          className="z-0 opacity-30"
+          className="z-0 opacity-20"
           priority
         />
         <Image
