@@ -28,14 +28,15 @@ export default function Frame() {
         alt="feature"
         width={290}
         height={248}
-        className="z-10 absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-9/12 max-w-[290px] h-auto"
+        className="z-10 absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-9/12 max-w-[600px] h-auto"
       />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center gap-8 pt-[20vh] h-full text-center p-4">
         <div className="flex flex-col gap-5">
-          <h1 className="text-white text-4xl w-full max-w-md font-garamond font-bold uppercase">
-            KÖSTLICHES <br /> ESSEN & EIN WUNDERVOLLES GENUSSERLEBNIS
+          <h1 className="text-white text-4xl w-full  font-garamond font-bold uppercase lg:text-6xl">
+            KÖSTLICHES <br className="lg:hidden block" /> ESSEN & EIN
+            <br className="hidden md:block" /> WUNDERVOLLES GENUSSERLEBNIS
           </h1>
           <p className="text-white text-xs max-w-sm mx-auto font-crimson">
             Inspiriert von Reisen und der Liebe zu verschiedenen Kulturen bietet
