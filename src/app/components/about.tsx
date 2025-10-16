@@ -21,12 +21,12 @@ export default function About() {
       <div className="relative z-10 flex flex-col items-center gap-10 sm:gap-12 lg:gap-16 text-center">
         <div className="flex flex-col items-center gap-4 sm:gap-5 text-white">
           <h2 className="max-w-md lg:max-w-4xl font-garamond text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
-            CHRUGER'S NO.10: EINE GEMÜTLICHE ECKE FÜR FEINSCHMECKER IN WIEN
+            CHRUGER&apos;S NO.10: EINE GEMÜTLICHE ECKE FÜR FEINSCHMECKER IN WIEN
           </h2>
           <div className="flex flex-col gap-4 max-w-sm lg:max-w-xl font-crimson text-sm sm:text-base lg:text-lg leading-relaxed text-white/80">
             <p>
-              Chruger's No.10 wurde 2021 in der historischen Krugerstraße 10
-              gegründet – mitten im lebendigen Herzen Wiens. Das gemütliche
+              Chruger&apos;s No.10 wurde 2021 in der historischen Krugerstraße
+              10 gegründet – mitten im lebendigen Herzen Wiens. Das gemütliche
               Interieur in zentraler Lage, kombiniert mit unserer Leidenschaft
               für marktfrische Zutaten, ehrliche Küche und eine einladende
               Atmosphäre, prägt unsere Identität.
@@ -40,8 +40,8 @@ export default function About() {
               Mit unserer sorgfältig zusammengestellten Auswahl an köstlichen
               Kombinationen ist für jeden Geschmack etwas dabei. Sowohl
               Einheimische als auch reisende Feinschmecker lieben die Atmosphäre
-              und Küche im Chruger's No.10. Wir freuen uns darauf, Sie bei uns
-              willkommen zu heißen!
+              und Küche im Chruger&apos;s No.10. Wir freuen uns darauf, Sie bei
+              uns willkommen zu heißen!
             </p>
           </div>
         </div>
