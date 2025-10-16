@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <Frame />
       <Feature />
+      <About />
     </div>
   );
 }
