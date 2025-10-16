@@ -1,8 +1,41 @@
+"use client";
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
+const foodItems = [
+  {
+    name: "TACOS",
+    image:
+      "https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PMMYNTNYRHEBSTBNV0W4AJ.png",
+  },
+  {
+    name: "BURRITOS",
+    image: "/Taco.png",
+  },
+  {
+    name: "NACHOS",
+    image: "/Tacos.png",
+  },
+  {
+    name: "QUESADILLAS",
+    image:
+      "https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PMMYNTNYRHEBSTBNV0W4AJ.png",
+  },
+];
+
 export default function Menu() {
+  const [width, setWidth] = useState(0);
+  const carousel = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (carousel.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
+  }, []);
+
   return (
-    <section className="bg-[#04242C] py-10 px-4 sm:py-12 sm:px-6 flex flex-col items-center justify-center gap-8 sm:gap-10 text-center">
+    <section className="bg-[#04242C] py-10 px-4 sm:py-12 sm:px-6 flex flex-col items-center justify-center gap-8 sm:gap-10 text-center overflow-hidden">
       <Image
         src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PMJKHQ8B5RT8BXPXZN4790.svg"
         alt="divider"
@@ -22,34 +55,36 @@ export default function Menu() {
         </p>
       </div>
 
-      <div className="flex items-center justify-between gap-2 sm:gap-4 w-full">
-        <Image
-          src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PRTKFCDYGVQNAEFEB7PWFH.svg"
-          alt="left arrow"
-          width={30}
-          height={30}
-          className="cursor-pointer shrink-0"
-        />
-        <div className="flex flex-col items-center gap-4 sm:gap-6">
-          <Image
-            src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PMMYNTNYRHEBSTBNV0W4AJ.png"
-            alt="Tacos"
-            width={226}
-            height={217}
-            className="w-full max-w-[180px] sm:max-w-[226px] h-auto"
-          />
-          <h3 className="text-[#EFC9A5] font-garamond text-xl sm:text-2xl font-bold">
-            TACOS
-          </h3>
-        </div>
-        <Image
-          src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PRTKFCDYGVQNAEFEB7PWFH.svg"
-          alt="right arrow"
-          width={30}
-          height={30}
-          className="rotate-180 cursor-pointer shrink-0"
-        />
-      </div>
+      <motion.div
+        ref={carousel}
+        className="cursor-grab w-full"
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="flex items-center"
+        >
+          {foodItems.map((item, index) => (
+            <motion.div
+              key={index}
+              className="min-w-[70%] sm:min-w-[50%] md:min-w-[30%] p-4 flex flex-col items-center gap-4"
+            >
+              <motion.div
+                className="w-48 h-48 md:w-56 md:h-56 rounded-full bg-cover bg-center"
+                style={{ backgroundImage: `url(${item.image})` }}
+                initial={{ opacity: 0.5, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: false, amount: 0.5 }}
+              ></motion.div>
+              <h3 className="text-[#EFC9A5] font-garamond text-xl sm:text-2xl font-bold">
+                {item.name}
+              </h3>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
 
       <button className="border-2 border-[#EFC9A5] text-white font-crimson text-sm sm:text-base font-semibold uppercase px-5 py-2.5 sm:px-6 sm:py-3">
         KOMPLETTES MENÜ
