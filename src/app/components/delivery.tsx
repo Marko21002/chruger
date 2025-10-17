@@ -38,8 +38,8 @@ export default function Delivery() {
               dir bequem über Lieferando ins Haus. Während unserer
               Öffnungszeiten liefern wir dir frisch zubereitete Köstlichkeiten
               direkt bis an die Haustür – schnell, lecker und unkompliziert.
-              Probier's gleich aus und hol dir den Geschmack von Chruger No:10
-              nach Hause!
+              Probier&apos;s gleich aus und hol dir den Geschmack von Chruger
+              No:10 nach Hause!
             </p>
 
             {/* CTA Button */}
