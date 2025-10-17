@@ -29,6 +29,13 @@ export default function Feature() {
     <div className="w-full bg-[#F5EFEF] py-16 sm:py-24 lg:py-32 pt-24 sm:pt-32 lg:pt-40">
       <div className="w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center gap-10 sm:gap-12 lg:gap-16">
+          <Image
+            src="/Fearute.svg"
+            alt="divider"
+            width={342}
+            height={29}
+            className="w-full max-w-[280px] sm:max-w-[312px] lg:max-w-md"
+          />
           <h2 className="max-w-md lg:max-w-4xl font-garamond text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-center text-[#193039]">
             Wir bieten eleganten Service Für Menschen
           </h2>

@@ -19,6 +19,13 @@ export default function About() {
         className="z-0 hidden lg:block opacity-60"
       />
       <div className="relative z-10 flex flex-col items-center gap-10 sm:gap-12 lg:gap-16 text-center">
+        <Image
+          src="/About.svg"
+          alt="divider"
+          width={352}
+          height={29}
+          className="w-full max-w-[280px] sm:max-w-[312px] lg:max-w-md"
+        />
         <div className="flex flex-col items-center gap-4 sm:gap-5 text-white">
           <h2 className="max-w-md lg:max-w-4xl font-garamond text-3xl sm:text-4xl lg:text-5xl font-bold uppercase">
             CHRUGER&apos;S NO.10: EINE GEMÜTLICHE ECKE FÜR FEINSCHMECKER IN WIEN
