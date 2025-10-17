@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Frame() {
   return (
-    <div className="relative w-full h-screen bg-[#04242C]">
+    <div className="relative w-full h-screen xl:h-[120vh] bg-[#04242C]">
       {/* Mobile/Tablet Background Image */}
       <Image
         src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PE6KJY4DJMPT6YMDXVVAC9.png"
@@ -28,7 +28,7 @@ export default function Frame() {
         alt="feature"
         width={290}
         height={248}
-        className="z-10 absolute bottom-[-8%] left-1/2 -translate-x-1/2 w-9/12 max-w-[600px] h-auto"
+        className="z-10 absolute bottom-[-8%] xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-9/12 max-w-[600px] h-auto"
       />
 
       {/* Navbar */}
@@ -95,7 +95,7 @@ export default function Frame() {
       </nav>
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center gap-8 pt-[10vh] lg:pt-[15vh] h-full text-center p-4">
+      <div className="relative z-20 flex flex-col items-center gap-8 pt-[10vh] lg:pt-[15vh] xl:pt-[12vh] h-full text-center p-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full  font-garamond font-bold uppercase lg:text-6xl">
             KÖSTLICHES <br className="lg:hidden block" /> ESSEN & EIN

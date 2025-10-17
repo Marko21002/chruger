@@ -2,8 +2,7 @@ import Feature from "./components/feature";
 import About from "./components/about";
 import Menu from "./components/Menu";
 import Hero from "./components/Hero";
-import Contacts from "./components/Contacts";
-
+import Delivery from "./components/delivery";
 export default function Home() {
   return (
     <div>
@@ -11,7 +10,7 @@ export default function Home() {
       <Feature />
       <About />
       <Menu />
-      <Contacts />
+      <Delivery />
     </div>
   );
 }
