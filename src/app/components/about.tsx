@@ -18,6 +18,15 @@ export default function About() {
         fill
         className="z-0 hidden lg:block opacity-60"
       />
+      {/* Gradient overlay for blending */}
+      <div
+        className="absolute inset-0 z-[1] opacity-70"
+        style={{
+          background: `radial-gradient(ellipse at center, transparent 20%, rgba(4, 36, 44, 0.3) 60%, rgba(4, 36, 44, 0.8) 90%)`,
+        }}
+      ></div>
+      {/* Additional top/bottom linear gradients */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#04242C]/40 via-transparent via-30% to-[#04242C]/60"></div>
       <div className="relative z-10 flex flex-col items-center gap-10 sm:gap-12 lg:gap-16 text-center">
         <Image
           src="/About.svg"
