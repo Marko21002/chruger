@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Frame() {
   return (
-    <div className="relative w-full h-[90vh] xl:h-[130vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
+    <div className="relative w-full h-[95vh] md:h-[100vh] xl:h-[130vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
       {/* Mobile/Tablet Background Image */}
       <Image
         src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PE6KJY4DJMPT6YMDXVVAC9.png"
@@ -28,7 +28,7 @@ export default function Frame() {
         alt="feature"
         width={290}
         height={248}
-        className="z-10 absolute bottom-[-8%] xl:bottom-[-6%] 2xl:bottom-[-6%] 3xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-9/12 max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto"
+        className="z-10 absolute bottom-[-8%] xl:bottom-[-6%] 2xl:bottom-[-6%] 3xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-8/12 max-w-[400px] xl:max-w-[500px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto"
       />
 
       {/* Navbar */}
@@ -49,25 +49,25 @@ export default function Frame() {
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              ABOUT
+              ÜBER UNS
             </a>
             <a
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              NEWS
+              NEUIGKEITEN
             </a>
             <a
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              CONTACT
+              KONTAKT
             </a>
             <a
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              PAGES
+              SEITEN
             </a>
           </div>
 
@@ -77,7 +77,7 @@ export default function Frame() {
             <div className="flex items-center gap-1 md:gap-2">
               <div className="w-5 h-3 md:w-6 md:h-4 bg-[#EFC9A5]/20 rounded"></div>
               <span className="text-[#EFC9A5] font-crimson text-xs md:text-sm">
-                EN
+                DE
               </span>
               <svg
                 className="w-2 h-2 md:w-3 md:h-3 text-[#EFC9A5]"
@@ -93,15 +93,15 @@ export default function Frame() {
             </div>
 
             {/* Order button */}
-            <button className="bg-[#EFC9A5] text-black font-crimson font-semibold text-xs md:text-sm px-3 py-2 md:px-4 uppercase tracking-wide hover:bg-[#EFC9A5]/90 transition-colors">
-              ORDER NOW
+            <button className="bg-[#EFC9A5] text-black font-crimson font-semibold text-xs md:text-sm px-4 py-3 md:px-6 uppercase tracking-wide hover:bg-[#EFC9A5]/90 transition-colors">
+              JETZT BESTELLEN
             </button>
           </div>
         </div>
       </nav>
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center gap-8 pt-[10vh] lg:pt-[15vh] xl:pt-[12vh] 2xl:pt-[10vh] 3xl:pt-[15vh] h-full text-center p-4">
+      <div className="relative z-20 flex flex-col items-center gap-8 pt-[9.5vh] lg:pt-[12vh] xl:pt-[10vh] 2xl:pt-[10vh] 3xl:pt-[10vh] h-full text-center p-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full font-garamond font-semibold uppercase lg:text-6xl 2xl:text-7xl 3xl:text-8xl">
             KÖSTLICHES <br className="lg:hidden block" /> ESSEN & EIN
