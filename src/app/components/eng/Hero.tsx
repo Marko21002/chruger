@@ -29,7 +29,7 @@ export default function Frame() {
         alt="feature"
         width={290}
         height={248}
-        className="z-10 absolute bottom-[-8%] xl:bottom-[-10%] 2xl:bottom-[-6%] 3xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-9/12 max-w-[400px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto"
+        className="z-10 absolute bottom-[-8%] xl:bottom-[-8%] 2xl:bottom-[-6%] 3xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-8/12 max-w-[400px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto"
       />
 
       {/* Navbar */}
@@ -41,7 +41,7 @@ export default function Frame() {
             alt="Chruger No.10 Logo"
             width={120}
             height={40}
-            className="h-6 w-auto xl:h-10 2xl:h-12"
+            className="h-8 w-auto xl:h-10 2xl:h-12"
           />
 
           {/* Navigation links - centered */}
@@ -50,25 +50,25 @@ export default function Frame() {
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              ÜBER UNS
+              ABOUT
             </a>
             <a
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              NEUIGKEITEN
+              NEWS
             </a>
             <a
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              KONTAKT
+              CONTACT
             </a>
             <a
               href="#"
               className="text-white font-crimson text-sm lg:text-base hover:text-[#EFC9A5] transition-colors uppercase tracking-wide"
             >
-              SEITEN
+              PAGES
             </a>
           </div>
 
@@ -76,18 +76,12 @@ export default function Frame() {
           <div className="flex items-center gap-3 md:gap-4">
             {/* Language switcher */}
             <Link
-              href="/en"
+              href="/"
               className="flex items-center gap-1 md:gap-2 hover:opacity-80 transition-opacity"
             >
-              <Image
-                src="/eng.png"
-                alt="English"
-                width={24}
-                height={16}
-                className="w-5 h-3 md:w-6 md:h-4 rounded object-cover"
-              />
+              <div className="w-5 h-3 md:w-6 md:h-4 rounded bg-gradient-to-b from-black to-red-600 via-red-500 border border-yellow-400 border-opacity-50"></div>
               <span className="text-[#EFC9A5] font-crimson text-sm md:text-sm">
-                EN
+                DE
               </span>
               <svg
                 className="w-2 h-2 md:w-3 md:h-3 text-[#EFC9A5]"
@@ -104,7 +98,7 @@ export default function Frame() {
 
             {/* Order button */}
             <button className="bg-[#EFC9A5] text-black font-crimson font-semibold text-xs md:text-sm px-4 py-3 md:px-6 uppercase tracking-wide hover:bg-[#EFC9A5]/90 transition-colors">
-              JETZT BESTELLEN
+              ORDER NOW
             </button>
           </div>
         </div>
@@ -114,21 +108,21 @@ export default function Frame() {
       <div className="relative z-20 flex flex-col items-center gap-8 pt-[9.5vh] lg:pt-[12vh] xl:pt-[10vh] 2xl:pt-[10vh] 3xl:pt-[10vh] h-full text-center p-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full font-garamond font-semibold uppercase lg:text-6xl 2xl:text-7xl 3xl:text-8xl">
-            KÖSTLICHES <br className="lg:hidden block" /> ESSEN & EIN
-            <br className="hidden md:block" /> WUNDERVOLLES GENUSSERLEBNIS
+            DELICIOUS <br className="lg:hidden block" /> FOOD & A
+            <br className="hidden md:block" /> WONDERFUL DINING EXPERIENCE
           </h1>
-          <p className="text-white opacity-60  text-xs max-w-xl mx-auto font-crimson lg:text-lg 2xl:text-xl 3xl:text-2xl 2xl:max-w-2xl 3xl:max-w-4xl">
-            Inspiriert von Reisen und der Liebe zu verschiedenen Kulturen bietet
-            das Chruger No:10 hausgemachte Köstlichkeiten aus frischen Zutaten –
-            komm vorbei und genieße sie!
+          <p className="text-white opacity-80  text-xs max-w-xl mx-auto font-crimson lg:text-lg 2xl:text-xl 3xl:text-2xl 2xl:max-w-2xl 3xl:max-w-4xl">
+            Inspired by travel and love for different cultures, Chruger No:10
+            offers homemade delicacies made from fresh ingredients – come by and
+            enjoy them!
           </p>
         </div>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-3 w-fit">
           <button className="bg-[#EFC9A5] font-crimson text-black w-full lg:w-auto whitespace-nowrap shrink-0 px-6 py-3 2xl:px-8 2xl:py-4 3xl:px-10 3xl:py-5 uppercase font-semibold text-base 2xl:text-lg 3xl:text-xl">
-            UNSERE SPEISEKARTE
+            OUR MENU
           </button>
           <button className="border border-white text-white font-crimson w-full lg:w-auto whitespace-nowrap shrink-0 px-6 py-3 2xl:px-8 2xl:py-4 3xl:px-10 3xl:py-5 uppercase font-semibold text-base 2xl:text-lg 3xl:text-xl">
-            Online bestellen
+            ORDER ONLINE
           </button>
         </div>
       </div>
