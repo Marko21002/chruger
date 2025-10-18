@@ -58,7 +58,7 @@ export default function Menu() {
           </h2>
           <p className="text-white/80 font-crimson text-sm sm:text-base lg:text-lg max-w-md lg:max-w-xl leading-relaxed">
             Enjoy our delicious, homemade dishes – fresh, honest and full of
-            flavor. At Chruger's No.10, a culinary journey with ever-new
+            flavor. At Chruger&apos;s No.10, a culinary journey with ever-new
             delicacies awaits you.
           </p>
         </div>
