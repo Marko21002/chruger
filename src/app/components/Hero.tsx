@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Frame() {
   return (
-    <div className="relative w-full h-[95vh] md:h-[100vh] xl:h-[130vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
+    <div className="relative w-full h-[95vh] md:h-[100vh] xl:h-[115vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
       {/* Mobile/Tablet Background Image */}
       <Image
         src="https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PE6KJY4DJMPT6YMDXVVAC9.png"
