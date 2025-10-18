@@ -4,23 +4,23 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    text: "Ich bin absolut begeistert von dem Avocado-Toast mit pochiertem Ei! Die Qualität der Zutaten und die Aufmerksamkeit für Details bei der Zubereitung haben es zu einem herausragenden Gericht gemacht. Ich freue mich auf meinen nächsten Besuch für eine weitere Runde!",
+    text: "I absolutely loved the avocado toast with a poached egg! The quality of the ingredients and the attention to detail in the preparation made it a standout dish. I'm looking forward to my next visit for another round!",
     name: "Jessica Robak",
     title: "Food Enthusiast",
     avatar:
       "https://images.unsplash.com/photo-1494790108755-2616b612b762?w=150&h=150&fit=crop&crop=face",
   },
   {
-    text: "Das Essen war fantastisch! Die frischen Zutaten und die kreative Zubereitung haben mich wirklich beeindruckt. Das gemütliche Ambiente macht jeden Besuch zu einem besonderen Erlebnis.",
+    text: "The food was fantastic! The fresh ingredients and creative preparation really impressed me. The cozy atmosphere makes every visit a special experience.",
     name: "Michael Weber",
-    title: "Stammkunde",
+    title: "Regular Guest",
     avatar:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
   },
   {
-    text: "Chruger's No.10 ist zu meinem Lieblingsplatz in Wien geworden. Die Kombination aus ausgezeichnetem Essen, freundlichem Service und der wunderbaren Atmosphäre ist einfach unschlagbar!",
+    text: "Chruger's No.10 has become my favorite place in Vienna. The combination of excellent food, friendly service and the wonderful atmosphere is simply unbeatable!",
     name: "Anna Müller",
-    title: "Wien Liebhaberin",
+    title: "Vienna Lover",
     avatar:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
   },
@@ -37,13 +37,13 @@ export default function Testimonials() {
           <div className="flex flex-col items-center gap-6 sm:gap-8">
             <Image
               src="/Testimomia.svg"
-              alt="Bewertungen"
+              alt="Reviews"
               width={284}
               height={29}
               className="w-full max-w-[280px] sm:max-w-[312px] lg:max-w-sm"
             />
             <h2 className="font-garamond text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-white max-w-2xl leading-tight">
-              DAS SAGEN UNSERE GÄSTE
+              WHAT OUR GUESTS SAY
             </h2>
           </div>
 

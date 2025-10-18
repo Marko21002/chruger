@@ -3,6 +3,7 @@ import About from "./components/about";
 import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Delivery from "./components/delivery";
+import Testimonials from "./components/testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Menu />
       <Delivery />
+      <Testimonials />
     </div>
   );
 }
