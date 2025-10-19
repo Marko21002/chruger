@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import Delivery from "./components/delivery";
 import Testimonials from "./components/testimonials";
-
+import CTA from "./components/cta";
 export default function Home() {
   return (
     <div>
@@ -14,6 +14,7 @@ export default function Home() {
       <Menu />
       <Delivery />
       <Testimonials />
+      <CTA />
     </div>
   );
 }

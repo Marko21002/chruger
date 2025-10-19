@@ -36,7 +36,7 @@ export default function Testimonials() {
           {/* Top Decorative Element */}
           <div className="flex flex-col items-center gap-6 sm:gap-8">
             <Image
-              src="/Testimomia.svg"
+              src="/Testimonia.svg"
               alt="Bewertungen"
               width={284}
               height={29}

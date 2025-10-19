@@ -4,6 +4,7 @@ import Menu from "../components/eng/Menu";
 import Hero from "../components/eng/Hero";
 import Delivery from "../components/eng/delivery";
 import Testimonials from "../components/eng/testimonials";
+import CTA from "../components/eng/cta";
 
 export default function EnglishHome() {
   return (
@@ -14,6 +15,7 @@ export default function EnglishHome() {
       <Menu />
       <Delivery />
       <Testimonials />
+      <CTA />
     </div>
   );
 }
