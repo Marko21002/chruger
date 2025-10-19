@@ -29,7 +29,7 @@ export default function Frame() {
         alt="feature"
         width={290}
         height={248}
-        className="z-10 absolute bottom-[-8%] xl:bottom-[-10%] 2xl:bottom-[-6%] 3xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-9/12 max-w-[400px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto"
+        className="z-10 absolute bottom-0 translate-y-[30%] sm:translate-y-[35%] md:translate-y-[35%] lg:translate-y-[30%] xl:translate-y-[25%] 2xl:translate-y-[20%] 3xl:translate-y-[15%] left-1/2 -translate-x-1/2 w-10/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-5/12 3xl:w-4/12 max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[650px] 3xl:max-w-[700px] h-auto"
       />
 
       {/* Navbar */}
@@ -111,13 +111,13 @@ export default function Frame() {
       </nav>
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center gap-8 pt-[9.5vh] lg:pt-[12vh] xl:pt-[10vh] 2xl:pt-[10vh] 3xl:pt-[10vh] h-full text-center p-4">
+      <div className="relative z-20 flex flex-col items-center gap-8 pt-[9.5vh] lg:pt-[12vh] xl:pt-[12vh] 2xl:pt-[10vh] 3xl:pt-[10vh] pb-40 sm:pb-44 md:pb-48 lg:pb-52 xl:pb-56 2xl:pb-60 3xl:pb-64 min-h-[calc(100%-8rem)] text-center px-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full font-garamond font-semibold uppercase lg:text-6xl 2xl:text-7xl 3xl:text-8xl">
             KÖSTLICHES <br className="lg:hidden block" /> ESSEN & EIN
             <br className="hidden md:block" /> WUNDERVOLLES GENUSSERLEBNIS
           </h1>
-          <p className="text-white opacity-60  text-xs max-w-xl mx-auto font-crimson lg:text-lg 2xl:text-xl 3xl:text-2xl 2xl:max-w-2xl 3xl:max-w-4xl">
+          <p className="text-white opacity-60  text-xs max-w-2xl mx-auto font-crimson lg:text-lg 2xl:text-xl 3xl:text-2xl 2xl:max-w-2xl 3xl:max-w-4xl">
             Inspiriert von Reisen und der Liebe zu verschiedenen Kulturen bietet
             das Chruger No:10 hausgemachte Köstlichkeiten aus frischen Zutaten –
             komm vorbei und genieße sie!

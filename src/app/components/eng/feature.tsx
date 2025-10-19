@@ -25,7 +25,7 @@ const features = [
 
 export default function Feature() {
   return (
-    <div className="w-full bg-[#F5EFEF] py-16 sm:py-24 lg:py-32 pt-24 sm:pt-32 lg:pt-40">
+    <div className="w-full bg-[#F5EFEF] py-16 sm:py-24 lg:py-32 pt-28 sm:pt-32 md:pt-36 lg:pt-40 xl:pt-44 2xl:pt-40 3xl:pt-36">
       <div className="w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center">
           {/* Image and Headline with smaller gap */}

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Frame() {
   return (
-    <div className="relative w-full h-[95vh] md:h-[100vh] xl:h-[115vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
+    <div className="relative w-full min-h-[700px] h-[95vh] md:h-[100vh] xl:h-[115vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
       {/* Mobile/Tablet Background Image */}
       <Image
         src="/hero.png"
@@ -29,7 +29,7 @@ export default function Frame() {
         alt="feature"
         width={290}
         height={248}
-        className="z-10 absolute bottom-[-8%] xl:bottom-[-8%] 2xl:bottom-[-6%] 3xl:bottom-[-8%] left-1/2 -translate-x-1/2 w-8/12 max-w-[400px] xl:max-w-[600px] 2xl:max-w-[700px] 3xl:max-w-[800px] h-auto"
+        className="z-10 absolute bottom-0 translate-y-[30%] sm:translate-y-[35%] md:translate-y-[35%] lg:translate-y-[30%] xl:translate-y-[25%] 2xl:translate-y-[20%] 3xl:translate-y-[15%] left-1/2 -translate-x-1/2 w-10/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-5/12 3xl:w-4/12 max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[650px] 3xl:max-w-[700px] h-auto"
       />
 
       {/* Navbar */}
@@ -105,7 +105,7 @@ export default function Frame() {
       </nav>
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center gap-8 pt-[9.5vh] lg:pt-[12vh] xl:pt-[10vh] 2xl:pt-[10vh] 3xl:pt-[10vh] h-full text-center p-4">
+      <div className="relative z-20 flex flex-col items-center gap-8 pt-[9.5vh] lg:pt-[12vh] xl:pt-[12vh] 2xl:pt-[10vh] 3xl:pt-[10vh] pb-40 sm:pb-44 md:pb-48 lg:pb-52 xl:pb-56 2xl:pb-60 3xl:pb-64 min-h-[calc(100%-8rem)] text-center px-4">
         <div className="flex flex-col gap-5">
           <h1 className="text-white text-4xl w-full font-garamond font-semibold uppercase lg:text-6xl 2xl:text-7xl 3xl:text-8xl">
             DELICIOUS <br className="lg:hidden block" /> FOOD & A
