@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useState, useRef } from "react";
 
 const features = [
   {
@@ -24,8 +26,35 @@ const features = [
 ];
 
 export default function Feature() {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="w-full bg-[#F5EFEF] py-16 sm:py-24 lg:py-32 pt-28 sm:pt-32 md:pt-36 lg:pt-40 xl:pt-44 2xl:pt-40 3xl:pt-36">
+    <div
+      ref={sectionRef}
+      className="w-full bg-[#F5EFEF] py-16 sm:py-24 lg:py-32 pt-28 sm:pt-32 md:pt-36 lg:pt-40 xl:pt-44 2xl:pt-40 3xl:pt-36"
+    >
       <div className="w-full max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center">
           {/* Image and Headline with smaller gap */}
@@ -35,9 +64,17 @@ export default function Feature() {
               alt="divider"
               width={342}
               height={29}
-              className="w-full max-w-[280px] sm:max-w-[312px] lg:max-w-md"
+              className={`w-full max-w-[280px] sm:max-w-[312px] lg:max-w-md transition-all duration-1000 ease-out ${
+                isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+              }`}
             />
-            <h2 className="max-w-md lg:max-w-4xl font-garamond text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-center text-[#193039]">
+            <h2
+              className={`max-w-md lg:max-w-4xl font-garamond text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-center text-[#193039] transition-all duration-1000 delay-200 ease-out ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
+            >
               We Offer Elegant Service For People
             </h2>
           </div>
@@ -47,19 +84,41 @@ export default function Feature() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center gap-4 sm:gap-5 text-center px-4"
+                className={`flex flex-col items-center justify-center gap-4 sm:gap-5 text-center px-4 transition-all duration-1000 ease-out ${
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-12"
+                }`}
+                style={{ transitionDelay: `${400 + index * 150}ms` }}
               >
                 <Image
                   src={feature.icon}
                   alt={feature.title}
                   width={64}
                   height={64}
-                  className="h-16 w-16 sm:h-20 sm:w-20 lg:h-16 lg:w-16"
+                  className={`h-16 w-16 sm:h-20 sm:w-20 lg:h-16 lg:w-16 transition-all duration-700 ease-out ${
+                    isVisible ? "scale-100 rotate-0" : "scale-75 rotate-12"
+                  }`}
+                  style={{ transitionDelay: `${500 + index * 150}ms` }}
                 />
-                <h2 className="text-xl sm:text-2xl lg:text-xl xl:text-2xl font-garamond font-semibold text-[#193039]">
+                <h2
+                  className={`text-xl sm:text-2xl lg:text-xl xl:text-2xl font-garamond font-semibold text-[#193039] transition-all duration-800 ease-out ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-4"
+                  }`}
+                  style={{ transitionDelay: `${600 + index * 150}ms` }}
+                >
                   {feature.title}
                 </h2>
-                <p className="text-sm sm:text-base lg:text-sm font-crimson text-[#193039] max-w-xs leading-relaxed">
+                <p
+                  className={`text-sm sm:text-base lg:text-sm font-crimson text-[#193039] max-w-xs leading-relaxed transition-all duration-800 ease-out ${
+                    isVisible
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 translate-y-4"
+                  }`}
+                  style={{ transitionDelay: `${700 + index * 150}ms` }}
+                >
                   {feature.description}
                 </p>
               </div>
