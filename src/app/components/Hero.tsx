@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Frame() {
   return (
-    <div className="relative w-full h-[95vh] md:h-[100vh] xl:h-[115vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
+    <div className="relative w-full min-h-[700px] h-[95vh] md:h-[100vh] xl:h-[115vh] 2xl:h-[120vh] 3xl:h-[90vh] bg-[#04242C]">
       {/* Mobile/Tablet Background Image */}
       <Image
         src="/hero.png"
