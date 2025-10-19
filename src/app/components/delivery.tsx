@@ -2,22 +2,33 @@ import Image from "next/image";
 
 export default function Delivery() {
   return (
-    <section className="bg-[#F0E8E2] py-16 sm:py-24 lg:py-32 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-        {/* Left side - Image */}
-        <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
+    <section className="bg-[#F0E8E2] py-16 sm:py-24 lg:py-32 px-6 relative overflow-hidden">
+      {/* Biker image - peeks from left on desktop */}
+      <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-32">
+        <Image
+          src="/Delivery.png"
+          alt="Delivery service"
+          width={400}
+          height={480}
+          className="opacity-80 h-auto object-contain"
+        />
+      </div>
+
+      <div className="max-w-4xl mx-auto relative z-10">
+        {/* Mobile image */}
+        <div className="lg:hidden flex justify-center mb-8">
           <Image
             src="/Delivery.png"
             alt="Delivery service"
-            width={500}
-            height={600}
-            className="w-full max-w-md opacity-80 lg:max-w-md h-auto object-contain"
+            width={300}
+            height={360}
+            className="opacity-80 h-auto object-contain"
           />
         </div>
 
-        {/* Right side - Content */}
-        <div className="order-1 lg:order-2 text-center lg:text-left">
-          <div className="flex flex-col items-center lg:items-start gap-6 lg:gap-8">
+        {/* Content - always centered */}
+        <div className="text-center">
+          <div className="flex flex-col items-center gap-6 lg:gap-8">
             {/* Decorative element */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-px bg-[#04242C]/30"></div>

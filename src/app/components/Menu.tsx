@@ -6,22 +6,32 @@ import Image from "next/image";
 
 const foodItems = [
   {
-    name: "TACOS",
-    image:
-      "https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PMMYNTNYRHEBSTBNV0W4AJ.png",
+    name: "SPEZIALITÄT 1",
+    image: "/menu/menu-1.png",
   },
   {
-    name: "BURRITOS",
-    image: "/Taco.png",
+    name: "SPEZIALITÄT 2",
+    image: "/menu/menu-2.png",
   },
   {
-    name: "NACHOS",
-    image: "/Tacos.png",
+    name: "SPEZIALITÄT 3",
+    image: "/menu/menu-3.png",
   },
   {
-    name: "QUESADILLAS",
-    image:
-      "https://workers.paper.design/file-assets/01K7PE35P5BXHACJRK07P8DF7H/01K7PMMYNTNYRHEBSTBNV0W4AJ.png",
+    name: "SPEZIALITÄT 4",
+    image: "/menu/menu-4.png",
+  },
+  {
+    name: "SPEZIALITÄT 5",
+    image: "/menu/menu-5.png",
+  },
+  {
+    name: "SPEZIALITÄT 6",
+    image: "/menu/menu-6.png",
+  },
+  {
+    name: "SPEZIALITÄT 7",
+    image: "/menu/menu-7.png",
   },
 ];
 
@@ -111,17 +121,23 @@ export default function Menu() {
                       >
                         <div className="relative">
                           <motion.div
-                            className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full bg-cover bg-center shadow-2xl relative overflow-hidden"
-                            style={{ backgroundImage: `url(${item.image})` }}
+                            className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full shadow-2xl relative overflow-hidden"
                             whileHover={{
                               rotate: isCenter ? 5 : 0,
                               transition: { duration: 0.3 },
                             }}
                           >
+                            <Image
+                              src={item.image}
+                              alt={item.name}
+                              fill
+                              className="object-cover rounded-full"
+                              sizes="(max-width: 640px) 192px, (max-width: 1024px) 224px, 288px"
+                            />
                             {!isCenter && (
-                              <div className="absolute inset-0 bg-black/30 rounded-full backdrop-blur-[1px]" />
+                              <div className="absolute inset-0 bg-black/30 rounded-full backdrop-blur-[1px] z-10" />
                             )}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-full z-10" />
                           </motion.div>
                           {isCenter && (
                             <motion.div

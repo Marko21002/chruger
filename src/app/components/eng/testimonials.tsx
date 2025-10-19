@@ -61,14 +61,14 @@ export default function Testimonials() {
 
           {/* Testimonial Content */}
           <div className="relative flex flex-col items-center gap-8 sm:gap-10">
-            {/* Navigation Arrows */}
+            {/* Navigation Arrows - Hidden on mobile, visible on larger screens */}
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-8 lg:-translate-x-12 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-[#EFC9A5]/30 bg-[#EFC9A5]/10 hover:bg-[#EFC9A5]/20 hover:border-[#EFC9A5]/50 transition-all duration-300 flex items-center justify-center group"
+              className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 xl:-translate-x-20 w-12 h-12 rounded-full border border-[#EFC9A5]/30 bg-[#EFC9A5]/10 hover:bg-[#EFC9A5]/20 hover:border-[#EFC9A5]/50 transition-all duration-300 items-center justify-center group"
               aria-label="Previous testimonial"
             >
               <svg
-                className="w-5 h-5 sm:w-6 sm:h-6 text-[#EFC9A5] group-hover:text-[#EFC9A5] transition-colors"
+                className="w-6 h-6 text-[#EFC9A5] group-hover:text-[#EFC9A5] transition-colors"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -84,11 +84,11 @@ export default function Testimonials() {
 
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-8 lg:translate-x-12 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-[#EFC9A5]/30 bg-[#EFC9A5]/10 hover:bg-[#EFC9A5]/20 hover:border-[#EFC9A5]/50 transition-all duration-300 flex items-center justify-center group"
+              className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 xl:translate-x-20 w-12 h-12 rounded-full border border-[#EFC9A5]/30 bg-[#EFC9A5]/10 hover:bg-[#EFC9A5]/20 hover:border-[#EFC9A5]/50 transition-all duration-300 items-center justify-center group"
               aria-label="Next testimonial"
             >
               <svg
-                className="w-5 h-5 sm:w-6 sm:h-6 text-[#EFC9A5] group-hover:text-[#EFC9A5] transition-colors"
+                className="w-6 h-6 text-[#EFC9A5] group-hover:text-[#EFC9A5] transition-colors"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
