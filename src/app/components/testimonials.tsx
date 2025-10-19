@@ -8,7 +8,7 @@ const testimonials = [
     name: "Jessica Robak",
     title: "Food Enthusiast",
     avatar:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b762?w=150&h=150&fit=crop&crop=face",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
   },
   {
     text: "Das Essen war fantastisch! Die frischen Zutaten und die kreative Zubereitung haben mich wirklich beeindruckt. Das gemütliche Ambiente macht jeden Besuch zu einem besonderen Erlebnis.",
@@ -29,6 +29,18 @@ const testimonials = [
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const nextTestimonial = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <section className="bg-[#04242C] py-16 sm:py-24 lg:py-32 text-center">
       <div className="max-w-4xl mx-auto px-6">
@@ -48,7 +60,48 @@ export default function Testimonials() {
           </div>
 
           {/* Testimonial Content */}
-          <div className="flex flex-col items-center gap-8 sm:gap-10">
+          <div className="relative flex flex-col items-center gap-8 sm:gap-10">
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevTestimonial}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-8 lg:-translate-x-12 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-[#EFC9A5]/30 bg-[#EFC9A5]/10 hover:bg-[#EFC9A5]/20 hover:border-[#EFC9A5]/50 transition-all duration-300 flex items-center justify-center group"
+              aria-label="Previous testimonial"
+            >
+              <svg
+                className="w-5 h-5 sm:w-6 sm:h-6 text-[#EFC9A5] group-hover:text-[#EFC9A5] transition-colors"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              onClick={nextTestimonial}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-8 lg:translate-x-12 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-[#EFC9A5]/30 bg-[#EFC9A5]/10 hover:bg-[#EFC9A5]/20 hover:border-[#EFC9A5]/50 transition-all duration-300 flex items-center justify-center group"
+              aria-label="Next testimonial"
+            >
+              <svg
+                className="w-5 h-5 sm:w-6 sm:h-6 text-[#EFC9A5] group-hover:text-[#EFC9A5] transition-colors"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
             {/* Quote Icon */}
             <Image
               src="/Quotes.svg"
