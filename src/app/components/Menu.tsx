@@ -166,7 +166,7 @@ export default function Menu() {
             </div>
 
             <Carousel.Control className="flex items-center justify-center gap-8 mt-8">
-              <Carousel.PrevTrigger className="bg-[#EFC9A5]/80 text-[#04242C] rounded-full p-3 transition-transform hover:scale-110 active:scale-95">
+              <Carousel.PrevTrigger className="bg-[#EFC9A5]/80 text-[#04242C] rounded-full p-3 transition-transform hover:scale-110 active:scale-95 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -182,7 +182,7 @@ export default function Menu() {
                   />
                 </svg>
               </Carousel.PrevTrigger>
-              <Carousel.NextTrigger className="bg-[#EFC9A5]/80 text-[#04242C] rounded-full p-3 transition-transform hover:scale-110 active:scale-95">
+              <Carousel.NextTrigger className="bg-[#EFC9A5]/80 text-[#04242C] rounded-full p-3 transition-transform hover:scale-110 active:scale-95 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -201,7 +201,7 @@ export default function Menu() {
             </Carousel.Control>
           </div>
         </Carousel.Root>
-        <button className="border-2 border-[#EFC9A5] text-white font-crimson text-sm sm:text-base font-semibold uppercase px-5 py-2.5 sm:px-6 sm:py-3 transition-colors hover:bg-[#EFC9A5] hover:text-[#04242C]">
+        <button className="border-2 border-[#EFC9A5] text-white font-crimson text-sm sm:text-base font-semibold uppercase px-5 py-2.5 sm:px-6 sm:py-3 transition-all duration-300 hover:bg-[#EFC9A5] hover:text-[#04242C] hover:scale-105 cursor-pointer">
           KOMPLETTES MENÜ
         </button>
       </div>

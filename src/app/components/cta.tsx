@@ -96,7 +96,7 @@ export default function CTA() {
                 </h3>
                 <a
                   href="tel:+436641144550"
-                  className="group flex items-center gap-3 bg-[#EFC9A5] hover:bg-[#EFC9A5]/90 text-black px-6 py-3 lg:px-8 lg:py-4 font-crimson font-bold text-base lg:text-lg uppercase tracking-wide transition-all duration-300 hover:scale-105"
+                  className="group flex items-center gap-3 bg-[#EFC9A5] hover:bg-[#EFC9A5]/90 text-black px-6 py-3 lg:px-8 lg:py-4 font-crimson font-bold text-base lg:text-lg uppercase tracking-wide transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   <svg
                     className="w-5 h-5 lg:w-6 lg:h-6 group-hover:scale-110 transition-transform duration-300"
@@ -119,7 +119,7 @@ export default function CTA() {
                 </h3>
                 <a
                   href="mailto:info@chrugerno10.com"
-                  className="group flex items-center gap-3 border-2 border-[#EFC9A5] text-[#EFC9A5] hover:bg-[#EFC9A5] hover:text-black px-6 py-3 lg:px-8 lg:py-4 font-crimson font-bold text-base lg:text-lg uppercase tracking-wide transition-all duration-300 hover:scale-105"
+                  className="group flex items-center gap-3 border-2 border-[#EFC9A5] text-[#EFC9A5] hover:bg-[#EFC9A5] hover:text-black px-6 py-3 lg:px-8 lg:py-4 font-crimson font-bold text-base lg:text-lg uppercase tracking-wide transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   <svg
                     className="w-5 h-5 lg:w-6 lg:h-6 group-hover:scale-110 transition-transform duration-300"

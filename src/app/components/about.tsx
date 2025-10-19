@@ -61,7 +61,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <button className="bg-[#EFC9A5] px-5 py-2.5 sm:px-6 sm:py-3 font-crimson text-sm sm:text-base font-semibold uppercase text-black transition-colors hover:bg-[#EFC9A5]/90">
+        <button className="bg-[#EFC9A5] px-5 py-2.5 sm:px-6 sm:py-3 font-crimson text-sm sm:text-base font-semibold uppercase text-black transition-all duration-300 hover:bg-[#EFC9A5]/90 hover:scale-105 cursor-pointer">
           KONTAKT
         </button>
       </div>

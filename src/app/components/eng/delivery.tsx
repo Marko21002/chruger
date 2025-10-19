@@ -42,7 +42,7 @@ export default function Delivery() {
             </p>
 
             {/* CTA Button */}
-            <button className="bg-[#04242C] text-white font-crimson font-semibold text-sm lg:text-base px-8 py-4 uppercase tracking-wide hover:bg-[#04242C]/90 transition-colors">
+            <button className="bg-[#04242C] text-white font-crimson font-semibold text-sm lg:text-base px-8 py-4 uppercase tracking-wide hover:bg-[#04242C]/90 transition-all duration-300 hover:scale-105 cursor-pointer">
               ORDER ONLINE
             </button>
           </div>
